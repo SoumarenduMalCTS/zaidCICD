@@ -1,22 +1,23 @@
 // jenkins pipeline script
-// pipeline with stages compile, test, build and echo messages in all the stages
+// pipeline with stages compile, test, build with echo statements
 pipeline {
     agent any
     stages {
         stage('Compile') {
             steps {
-                echo 'Compiling the code from github'
+                echo 'Compiling..'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing the code'
+                echo 'Testing..'
             }
         }
         stage('Build') {
             steps {
-                echo 'Building the code'
+                echo 'Building..'
             }
         }
     }
 }
+
