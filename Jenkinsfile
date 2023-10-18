@@ -15,8 +15,13 @@ pipeline {
         stage('Info') {
             steps {
                 echo 'Running on Jenkins'
-                echo "Maven home: ${mavenHome}"
-                echo "Docker home: ${dockerHome}"
+                echo "$env.JENKINS_URL"
+                echo "$env.JOB_NAME"
+                echo "$env.BUILD_NUMBER"
+                echo "$env.BUILD_ID"
+                echo "$env.BUILD_URL"
+
+
             }
         }
 
