@@ -5,7 +5,7 @@ pipeline {
     stages {  
         stage('Compile') {
             steps {
-                echo 'Compiling..'
+                echo 'Compiling to check for trigger'
             }
         }
         stage('Test') {
