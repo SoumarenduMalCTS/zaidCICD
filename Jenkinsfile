@@ -2,7 +2,7 @@
 // pipeline with stages compile, test, build with echo statements
 pipeline {
     agent any
-    stages {
+    stages {  
         stage('Compile') {
             steps {
                 echo 'Compiling..'
